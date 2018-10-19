@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS-Responsive/style.css">
+    <style type="text/css">
+        .form-group {
+            margin: 15px;
+        }
+
+        lable {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .form-control {
+            border-radius: 3px;
+        }
+
+        .danger-text {
+            color: red;
+        }
+
+        .hidden-text {
+            display: none;
+        }
+
+        .success-text {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+<form action="#" name="register-form">
+    <div class="form-group">
+        <lable>User Name</lable>
+        <input type="text" name="username" class="form-control">
+        <span class="danger-text hidden-text">*Vui lòng nhập tên nguời dùng.</span>
+    </div>
+    <div class="form-group">
+        <lable>Password</lable>
+        <input type="password" name="password" class="form-control">
+        <span class="danger-text hidden-text">*Vui lòng nhập mật khẩu.</span>
+    </div>
+    <div class="form-group">
+        <lable>Full Name</lable>
+        <input type="text" name="fullName" class="form-control">
+        <span class="danger-text hidden-text">*Vui lòng nhập tên của bạn.</span>
+    </div>
+    <div class="form-group">
+        <lable>Email</lable>
+        <input type="text" name="email" class="form-control">
+        <span class="danger-text hidden-text">*Vui lòng nhập email.</span>
+    </div>
+    <div class="form-group">
+        <lable></lable>
+        <input type="button" name="btn-submit" class="form-group" value="Submit">
+        <input type="reset" name="btn-reset" class="form-group" value="Reset" onclick="tai_lai_trang()">
+    </div>
+</form>
+<script src="Javascript/01.js"></script>
+</body>
+</html>
